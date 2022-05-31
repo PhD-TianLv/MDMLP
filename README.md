@@ -3,7 +3,9 @@
 ## How to use
 
 It's used in the same way as timm.
+
 We use [fvcore](https://github.com/facebookresearch/fvcore) to measure params and flops.
+
 We changed `timm/data/dataset_factory.py` to be able to train on Flowers102 and Food101.
 
 ```
