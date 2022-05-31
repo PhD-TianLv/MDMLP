@@ -1,3 +1,5 @@
+# The code of the paper [MDMLP](https://arxiv.org/abs/2205.14477)
+
 ## Thanks to [TIMM](https://github.com/rwightman/pytorch-image-models) library!
 
 ## How to use
