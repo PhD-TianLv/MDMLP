@@ -1,0 +1,47 @@
+dataset_download: True
+in_chans: 3
+workers: 4
+
+dataset: torch/cifar100
+pretrained: False
+num_classes: 100
+input_size:
+  - 3
+  - 32
+  - 32
+crop_pct: 0.875
+mean:
+  - 0.5071
+  - 0.4867
+  - 0.4408
+std:
+  - 0.2675
+  - 0.2565
+  - 0.2761
+batch_size: 128
+opt: sgd
+weight_decay: 1e-4
+shed: cosine
+lr: 0.1
+epochs: 200
+warmup_epochs: 10
+scale: # Random resize scale, for cifar10
+  - 0.75
+  - 1.0
+ratio: # Random resize aspect ratio
+  - 0.75
+  - 1.33
+hflip: 0.5
+color_jitter: 0.4
+#aa: rand-m7-n3-mstd1.0
+aug_repeats: 0
+bce_loss: False  # loss: cross-entropy-loss
+reprob: 0  # Random erase
+mixup: 0
+cutmix: 0
+smoothing: 0
+drop: 0  # dropout
+drop_path: 0
+model_ema: False
+seed: 42
+amp: True

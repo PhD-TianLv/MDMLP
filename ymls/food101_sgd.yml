@@ -1,0 +1,47 @@
+dataset_download: True
+in_chans: 3
+workers: 4
+
+dataset: torch/food101
+pretrained: False
+num_classes: 101
+input_size:
+  - 3
+  - 224
+  - 224
+crop_pct: 0.875
+mean:
+  - 0.5450
+  - 0.4435
+  - 0.3436
+std:
+  - 0.2729
+  - 0.2758
+  - 0.2798
+batch_size: 128
+opt: sgd
+weight_decay: 1e-4
+shed: cosine
+lr: 0.1
+epochs: 200
+warmup_epochs: 10
+scale:
+  - 0.08
+  - 1.0
+ratio: # Random resize aspect ratio
+  - 0.75
+  - 1.33
+hflip: 0.5
+color_jitter: 0.4
+#aa: rand-m7-n3-mstd1.0
+aug_repeats: 0
+bce_loss: False  # loss: cross-entropy-loss
+reprob: 0  # Random erase
+mixup: 0
+cutmix: 0
+smoothing: 0
+drop: 0  # dropout
+drop_path: 0
+model_ema: False
+seed: 42
+amp: True
