@@ -12,14 +12,14 @@ We changed `timm/data/dataset_factory.py` to be able to train on Flowers102 and 
 
 ```
 # For cifar10
-python3 train.py /path-to-cifar10 -c ymls/cifar10_sgd.yml --model mdmlp_ssd_patch4_lap2_dim64_depth8_32
+python3 train.py /path-to-cifar10 -c ymls/cifar10_sgd.yml --model mdmlp_patch4_lap2_dim64_depth8_32
 # For cifar100
-python3 train.py /path-to-cifar100 -c ymls/cifar100_sgd.yml --model mdmlp_ssd_patch4_lap2_dim64_depth8_32
+python3 train.py /path-to-cifar100 -c ymls/cifar100_sgd.yml --model mdmlp_patch4_lap2_dim64_depth8_32
 
 # For Flowers102
-python3 train.py /path-to-flowers102 -c ymls/flowers102_sgd.yml --model mdmlp_ssd_patch14_lap7_dim64_depth8_224
+python3 train.py /path-to-flowers102 -c ymls/flowers102_sgd.yml --model mdmlp_patch14_lap7_dim64_depth8_224
 # For Food101
-python3 train.py /path-to-food101 -c ymls/food101_sgd.yml --model mdmlp_ssd_patch14_lap7_dim64_depth8_224
+python3 train.py /path-to-food101 -c ymls/food101_sgd.yml --model mdmlp_patch14_lap7_dim64_depth8_224
 
 # For MDAttnTool
 python3 train.py /path-to-cifar10 -c ymls/cifar10_sgd.yml --model mdmlp_attn_32
