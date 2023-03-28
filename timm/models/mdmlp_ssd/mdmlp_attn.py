@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from einops import rearrange
-from mdattntool import MDAttnTool
+from .mdattntool import MDAttnTool
 from collections import OrderedDict
 from einops.layers.torch import Rearrange, Reduce
 
